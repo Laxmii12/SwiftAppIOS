@@ -1,0 +1,30 @@
+PODS:
+  - Smartech-iOS-SDK (3.5.6)
+  - SmartechAppInbox-iOS-SDK (3.5.6)
+  - SmartechNudges (9.0.14):
+    - Smartech-iOS-SDK (>= 3.5.6)
+  - SmartPush-iOS-SDK (3.5.5):
+    - Smartech-iOS-SDK (>= 3.5.5)
+
+DEPENDENCIES:
+  - Smartech-iOS-SDK (~> 3.5.6)
+  - SmartechAppInbox-iOS-SDK (~> 3.5.6)
+  - SmartechNudges (~> 9.0.14)
+  - SmartPush-iOS-SDK (~> 3.5.5)
+
+SPEC REPOS:
+  trunk:
+    - Smartech-iOS-SDK
+    - SmartechAppInbox-iOS-SDK
+    - SmartechNudges
+    - SmartPush-iOS-SDK
+
+SPEC CHECKSUMS:
+  Smartech-iOS-SDK: 50ee8ddf72464a9820f6d546fb48e43896d96a2a
+  SmartechAppInbox-iOS-SDK: 41f1c06b6d36f427d78dfce1192c6db317f57d1c
+  SmartechNudges: 0e7c98bae0a7b6d44655d15674607ffe003c31b0
+  SmartPush-iOS-SDK: e5f21bbd7aae14a7e49e03bf1223220146bf3fa6
+
+PODFILE CHECKSUM: 32902fa33cbbb8218af230fd63af2aaff280b269
+
+COCOAPODS: 1.15.2

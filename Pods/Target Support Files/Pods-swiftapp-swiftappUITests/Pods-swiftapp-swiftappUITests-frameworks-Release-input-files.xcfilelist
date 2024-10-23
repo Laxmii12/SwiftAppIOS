@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-swiftapp-swiftappUITests/Pods-swiftapp-swiftappUITests-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SmartPush-iOS-SDK/SmartPush.framework/SmartPush
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Smartech-iOS-SDK/Smartech.framework/Smartech
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SmartechAppInbox-iOS-SDK/SmartechAppInbox.framework/SmartechAppInbox
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SmartechNudges/SmartechNudges.framework/SmartechNudges

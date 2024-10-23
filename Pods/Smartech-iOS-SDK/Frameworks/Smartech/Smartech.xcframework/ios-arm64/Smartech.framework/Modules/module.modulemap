@@ -1,0 +1,6 @@
+framework module Smartech {
+  umbrella header "Smartech.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module SmartechAppInbox {
+  umbrella header "SmartechAppInbox.h"
+  export *
+
+  module * { export * }
+}

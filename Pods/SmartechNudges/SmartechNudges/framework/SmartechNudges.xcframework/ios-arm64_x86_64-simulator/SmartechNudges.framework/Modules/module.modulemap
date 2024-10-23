@@ -1,0 +1,7 @@
+
+framework module SmartechNudges {
+  umbrella header "Hansel-umbrella.h"
+  export *
+  
+  module * { export * }
+}

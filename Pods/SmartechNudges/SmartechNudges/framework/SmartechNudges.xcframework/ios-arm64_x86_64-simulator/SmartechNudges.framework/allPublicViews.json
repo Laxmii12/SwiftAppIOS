@@ -1,0 +1,4 @@
+{
+    "OSVersion": "13",
+    "allPublicViews": ["LPLinkView","UIWindow","UIProgressView","UISearchTextField","UIStepper","UIActivityIndicatorView","UISearchBar","UIVisualEffectView","UIToolbar","UIInputView","UIPickerView","UITextField","UILabel","UIScrollView","UIControl","UIDatePicker","UITableViewHeaderFooterView","UICollectionViewCell","UIPageControl","UIImageView","UINavigationBar","UIRefreshControl","UICollectionView","UITableViewCell","UISwitch","UITableView","UIPopoverBackgroundView","UIButton","UIView","UITabBar","UIAlertView","UIActionSheet","UIStackView","UISegmentedControl","UISlider","UITextView","MTKView","PDFThumbnailView","PDFView","WKWebView","MKUserTrackingButton","MKOverlayPathView","MKCircleView","MKAnnotationView","MKPinAnnotationView","MKScaleView","MKPolygonView","MKMarkerAnnotationView","MKMapView","MKPolylineView","MKOverlayView","MKCompassButton","AVRoutePickerView","GLKView","SCNView"]
+}

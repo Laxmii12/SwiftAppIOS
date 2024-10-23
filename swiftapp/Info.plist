@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>smartechapp</string>
+			</array>
+		</dict>
+	</array>
+	<key>SmartechKeys</key>
+	<dict>
+		<key>SmartechAppGroup</key>
+		<string>group.com.netcore.SmartechApp</string>
+		<key>SmartechAppId</key>
+		<string>0e6fcbcb2600d8ea596051e8030be050</string>
+		<key>SmartechAutoFetchLocation</key>
+		<true/>
+		<key>SmartechUseAdvId</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>
