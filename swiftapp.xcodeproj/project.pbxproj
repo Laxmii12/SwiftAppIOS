@@ -111,6 +111,7 @@
 		78860F6A2CC2E78900900F1B /* ProductsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPageView.swift; sourceTree = "<group>"; };
 		78860F6C2CC2F1F100900F1B /* SmartechAppInbox.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SmartechAppInbox.xcframework; path = "Pods/SmartechAppInbox-iOS-SDK/Frameworks/SmartechAppInbox/SmartechAppInbox.xcframework"; sourceTree = "<group>"; };
 		78860F6E2CC2FD7100900F1B /* SmartechNudges.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SmartechNudges.xcframework; path = Pods/SmartechNudges/SmartechNudges/framework/SmartechNudges.xcframework; sourceTree = "<group>"; };
+		78DEB4712D0251F9007121CC /* swiftappRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swiftappRelease.entitlements; sourceTree = "<group>"; };
 		A7139D31024332D144A914E3 /* Pods_swiftappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB58FEE03B30C22448DDB9F /* Pods-swiftappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftappTests.debug.xcconfig"; path = "Target Support Files/Pods-swiftappTests/Pods-swiftappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8AB9130D83DC4AA505E2037 /* Pods_swiftapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +210,7 @@
 		785BA9F02CC2C0D000473967 /* swiftapp */ = {
 			isa = PBXGroup;
 			children = (
+				78DEB4712D0251F9007121CC /* swiftappRelease.entitlements */,
 				785BAA1C2CC2C80800473967 /* Info.plist */,
 				785BAA1B2CC2C7C200473967 /* swiftapp.entitlements */,
 				785BA9F12CC2C0D000473967 /* swiftappApp.swift */,
@@ -841,7 +843,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = swiftapp/swiftapp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = swiftapp/swiftappRelease.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
