@@ -47,7 +47,7 @@
 //    // Handle deep link navigation
 //    func handleDeepLink(urlString: String) {
 //        print("Handling deep link with URL: \(urlString)")
-//        
+//
 //        // Set the URL string received from the deep link
 //        deeplinkURLString = urlString
 //        isNavigatingToURL = true // Trigger navigation to the WebView with the URL
@@ -226,7 +226,6 @@ struct HanselWrapperView<Content: View>: UIViewRepresentable {
         // No updates required for this wrapper
     }
 }
-
 
 
 

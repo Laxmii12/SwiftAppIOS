@@ -25,7 +25,7 @@
 		<key>SmartechAppGroup</key>
 		<string>group.com.netcore.SmartechApp</string>
 		<key>SmartechAppId</key>
-		<string>0e6fcbcb2600d8ea596051e8030be050</string>
+		<string>cdd5abdf5d9441b21b0f9e6223a4ed7a</string>
 		<key>SmartechAutoFetchLocation</key>
 		<true/>
 		<key>SmartechUseAdvId</key>
@@ -37,5 +37,12 @@
 		<string>processing</string>
 		<string>remote-notification</string>
 	</array>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We need your location to trigger geofencing events.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We need your location to improve app functionality.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We need your location even when the app is in background.</string>
+
 </dict>
 </plist>

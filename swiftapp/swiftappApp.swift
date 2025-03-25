@@ -12,6 +12,7 @@ import UserNotifications
 import UserNotificationsUI
 import SmartechAppInbox
 import SmartechNudges
+import CoreLocation
 
 
 @main
@@ -34,50 +35,29 @@ struct swiftappApp: App {
                                         }
                 }
                     
-//                .onAppear {
+                .onAppear {
+                    Smartech.sharedInstance().login("laxmi1999swift@gmail.com")
+
 //                                    // Example of interacting with SceneDelegate, if needed
 //                                    if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
 //                                       let sceneDelegate = scene.delegate as? SceneDelegate {
 //                                        // Call a method or access properties in SceneDelegate
 //                                        sceneDelegate.scene(<#UIScene#>, openURLContexts: <#Set<UIOpenURLContext>#>)
-//
-//                                    }
-//                                }
+
+                                    }
+                                }
             
         }
     }
-}
 
 
 
-//class SceneDelegate : NSObject, UIWindowSceneDelegate  {
-//
-//    var window: UIWindow?
-//    
-//    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//        if let urlContext = connectionOptions.urlContexts.first {
-//                let url = urlContext.url
-//                let handledBySmartech = Smartech.sharedInstance().application(UIApplication.shared, open: url, options: [:])
-//                if(!handledBySmartech) {
-//                    //This url should be handled by the app.
-//                }
-//        }
-//    }
-//        
-//    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-//        if let urlContext = URLContexts.first {
-//                let url = urlContext.url
-//                let handledBySmartech = Smartech.sharedInstance().application(UIApplication.shared, open: url, options: [:])
-//                if(!handledBySmartech) {
-//                    //This url should be handled by the app.
-//                }
-//        }
-//    }
-//
-//    
-//}
+
+
 
 class AppDelegate : NSObject, UIApplicationDelegate, SmartechDelegate, UNUserNotificationCenterDelegate, HanselActionListener,HanselEventsListener{
+    var locationManager: CLLocationManager? // Moved here to be accessible in the entire class
+
     func onActionPerformed(action: String!) {
         
     }
@@ -93,6 +73,8 @@ class AppDelegate : NSObject, UIApplicationDelegate, SmartechDelegate, UNUserNot
         Smartech.sharedInstance().initSDK(with: self, withLaunchOptions: launchOptions)
         Smartech.sharedInstance().setDebugLevel(.verbose)
         Hansel.enableDebugLogs()
+        locationManager = CLLocationManager()
+
         UNUserNotificationCenter.current().delegate = self
         SmartPush.sharedInstance().registerForPushNotificationWithDefaultAuthorizationOptions()
 //        SmartPush.sharedInstance().registerForPushNotification(authorizationOptions: [.alert, .badge, .sound])
@@ -176,7 +158,35 @@ class AppDelegate : NSObject, UIApplicationDelegate, SmartechDelegate, UNUserNot
 
         print("SMTLogger: NotificationPayload: \(String(describing: notificationPayload))")
     }
+    
+    class ViewController: UIViewController, CLLocationManagerDelegate {
+        let locationManager = CLLocationManager()
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            locationManager.delegate = self
+            locationManager.requestAlwaysAuthorization() // Important for geofencing
+            
+            // Optional: accuracy or other configurations
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        }
+    }
 
+    func startGeofencing() {
+        let center = CLLocationCoordinate2D(latitude: 12.923576541899678, longitude: 77.61962592883528) // Example: Apple HQ
+        
+        let region = CLCircularRegion(
+            center: center,
+            radius: 100, // meters
+            identifier: "applePark"
+        )
+        
+        region.notifyOnEntry = true
+        region.notifyOnExit = true
+        
+        self.locationManager?.startMonitoring(for: region)
+    }
    
        
     }

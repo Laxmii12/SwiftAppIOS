@@ -22,6 +22,7 @@
 		785BAA392CC2C90200473967 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BAA382CC2C90200473967 /* NotificationViewController.swift */; };
 		785BAA3C2CC2C90200473967 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 785BAA3B2CC2C90200473967 /* Base */; };
 		785BAA402CC2C90200473967 /* SmartechNCE.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 785BAA322CC2C90100473967 /* SmartechNCE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		788357D92D479081007F99FD /* AppInboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788357D82D479081007F99FD /* AppInboxView.swift */; };
 		78860F652CC2DF6C00900F1B /* SmartPush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78860F642CC2DF6C00900F1B /* SmartPush.xcframework */; };
 		78860F672CC2DF7700900F1B /* Smartech.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78860F662CC2DF7700900F1B /* Smartech.xcframework */; };
 		78860F692CC2E77000900F1B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78860F682CC2E77000900F1B /* HomePageView.swift */; };
@@ -105,12 +106,14 @@
 		785BAA3B2CC2C90200473967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		785BAA3D2CC2C90200473967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		785BAA442CC2C92200473967 /* SmartechNCE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartechNCE.entitlements; sourceTree = "<group>"; };
+		788357D82D479081007F99FD /* AppInboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInboxView.swift; sourceTree = "<group>"; };
 		78860F642CC2DF6C00900F1B /* SmartPush.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SmartPush.xcframework; path = "Pods/SmartPush-iOS-SDK/Frameworks/SmartPush/SmartPush.xcframework"; sourceTree = "<group>"; };
 		78860F662CC2DF7700900F1B /* Smartech.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Smartech.xcframework; path = "Pods/Smartech-iOS-SDK/Frameworks/Smartech/Smartech.xcframework"; sourceTree = "<group>"; };
 		78860F682CC2E77000900F1B /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		78860F6A2CC2E78900900F1B /* ProductsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPageView.swift; sourceTree = "<group>"; };
 		78860F6C2CC2F1F100900F1B /* SmartechAppInbox.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SmartechAppInbox.xcframework; path = "Pods/SmartechAppInbox-iOS-SDK/Frameworks/SmartechAppInbox/SmartechAppInbox.xcframework"; sourceTree = "<group>"; };
 		78860F6E2CC2FD7100900F1B /* SmartechNudges.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SmartechNudges.xcframework; path = Pods/SmartechNudges/SmartechNudges/framework/SmartechNudges.xcframework; sourceTree = "<group>"; };
+		78D40C1F2D315D5200609AB8 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = ../../../../Downloads/test.wav; sourceTree = "<group>"; };
 		78DEB4712D0251F9007121CC /* swiftappRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swiftappRelease.entitlements; sourceTree = "<group>"; };
 		A7139D31024332D144A914E3 /* Pods_swiftappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB58FEE03B30C22448DDB9F /* Pods-swiftappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftappTests.debug.xcconfig"; path = "Target Support Files/Pods-swiftappTests/Pods-swiftappTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		785BA9F02CC2C0D000473967 /* swiftapp */ = {
 			isa = PBXGroup;
 			children = (
+				78D40C1F2D315D5200609AB8 /* test.wav */,
 				78DEB4712D0251F9007121CC /* swiftappRelease.entitlements */,
 				785BAA1C2CC2C80800473967 /* Info.plist */,
 				785BAA1B2CC2C7C200473967 /* swiftapp.entitlements */,
@@ -219,6 +223,7 @@
 				785BA9F72CC2C0D100473967 /* Preview Content */,
 				78860F682CC2E77000900F1B /* HomePageView.swift */,
 				78860F6A2CC2E78900900F1B /* ProductsPageView.swift */,
+				788357D82D479081007F99FD /* AppInboxView.swift */,
 			);
 			path = swiftapp;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				785BA9F42CC2C0D000473967 /* ContentView.swift in Sources */,
 				78860F6B2CC2E78900900F1B /* ProductsPageView.swift in Sources */,
 				78860F692CC2E77000900F1B /* HomePageView.swift in Sources */,
+				788357D92D479081007F99FD /* AppInboxView.swift in Sources */,
 				785BA9F22CC2C0D000473967 /* swiftappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
